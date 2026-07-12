@@ -1,0 +1,3566 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#071a4a" name="theme-color"/>
+<title>B&amp;K Express | Freight, Transport &amp; Logistics Australia</title>
+<meta content="B&amp;K Express provides reliable freight, transport, warehousing, distribution, and logistics solutions for Australian businesses. Request a quote or speak with the team." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "B&K Express",
+  "url": "https://bkexpress.com.au/",
+  "description": "Australian freight, transport, warehousing, distribution, and logistics solutions for businesses.",
+  "telephone": [
+    "1300 551 127",
+    "03 9036 3330"
+  ],
+  "email": "bookings@bkexpress.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "215–221 Sunshine Rd",
+    "addressLocality": "Tottenham",
+    "addressRegion": "VIC",
+    "postalCode": "3012",
+    "addressCountry": "AU"
+  },
+  "openingHours": "Mo-Fr 07:00-16:00"
+}
+</script>
+<style>
+:root{
+  --navy:#071a4a;
+  --navy-2:#0b2a68;
+  --blue:#0a66ff;
+  --cyan:#00aeea;
+  --ink:#172033;
+  --muted:#647089;
+  --line:#dfe5ee;
+  --surface:#f4f7fb;
+  --white:#fff;
+  --success:#159455;
+  --font:"Manrope",sans-serif;
+  --container:1280px;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 18px 45px rgba(7,26,74,.10);
+  --shadow-soft:0 10px 26px rgba(7,26,74,.07);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --fast:220ms;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  min-width:320px;
+  overflow-x:hidden;
+  color:var(--ink);
+  background:var(--white);
+  font-family:var(--font);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+body.menu-open,
+body.bk-modal-open{
+  overflow:hidden;
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea{
+  color:inherit;
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+ul{
+  list-style:none;
+}
+
+section[id]{
+  scroll-margin-top:94px;
+}
+
+::selection{
+  color:var(--white);
+  background:var(--blue);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+  outline:3px solid rgba(0,174,234,.45);
+  outline-offset:3px;
+}
+
+.bk-container{
+  width:min(var(--container),calc(100% - 40px));
+  margin-inline:auto;
+}
+
+.bk-section{
+  padding:104px 0;
+}
+
+.bk-section--soft{
+  background:var(--surface);
+}
+
+.bk-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  color:var(--blue);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.bk-eyebrow::before{
+  content:"";
+  width:28px;
+  height:2px;
+  background:var(--cyan);
+}
+
+.bk-title{
+  max-width:16ch;
+  color:var(--navy);
+  font-size:clamp(34px,4vw,58px);
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:1.02;
+}
+
+.bk-title--center{
+  margin-inline:auto;
+  text-align:center;
+}
+
+.bk-lede{
+  max-width:64ch;
+  margin-top:20px;
+  color:var(--muted);
+  font-size:18px;
+}
+
+.bk-lede--center{
+  margin-inline:auto;
+  text-align:center;
+}
+
+.bk-btn{
+  min-height:50px;
+  padding:13px 22px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border:1px solid transparent;
+  border-radius:var(--radius-sm);
+  font-size:14px;
+  font-weight:800;
+  transition:
+    transform var(--fast) var(--ease),
+    background var(--fast) ease,
+    border-color var(--fast) ease,
+    color var(--fast) ease,
+    box-shadow var(--fast) ease;
+}
+
+.bk-btn:hover{
+  transform:translateY(-2px);
+}
+
+.bk-btn--primary{
+  color:var(--white);
+  background:var(--blue);
+  box-shadow:0 10px 24px rgba(10,102,255,.23);
+}
+
+.bk-btn--primary:hover{
+  background:#0757db;
+  box-shadow:0 14px 28px rgba(10,102,255,.29);
+}
+
+.bk-btn--dark{
+  color:var(--white);
+  background:var(--navy);
+}
+
+.bk-btn--dark:hover{
+  background:var(--navy-2);
+}
+
+.bk-btn--light{
+  color:var(--navy);
+  background:var(--white);
+}
+
+.bk-btn--outline-light{
+  color:var(--white);
+  border-color:rgba(255,255,255,.52);
+  background:transparent;
+}
+
+.bk-btn--outline-light:hover{
+  color:var(--navy);
+  border-color:var(--white);
+  background:var(--white);
+}
+
+/* Utility */
+.bk-utility{
+  color:rgba(255,255,255,.82);
+  background:var(--navy);
+  font-size:13px;
+}
+
+.bk-utility__inner{
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.bk-utility__left,
+.bk-utility__right{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+
+.bk-utility a{
+  transition:color var(--fast) ease;
+}
+
+.bk-utility a:hover{
+  color:var(--white);
+}
+
+/* Navigation */
+.bk-nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px solid rgba(223,229,238,.75);
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+
+.bk-nav__inner{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.bk-logo{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:var(--navy);
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+
+.bk-logo__mark{
+  width:36px;
+  height:36px;
+  display:grid;
+  place-items:center;
+  border-radius:7px;
+  color:var(--white);
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  font-size:15px;
+  letter-spacing:-.05em;
+}
+
+.bk-logo strong{
+  color:var(--blue);
+}
+
+.bk-nav__links{
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+
+.bk-nav__links > a:not(.bk-btn){
+  position:relative;
+  padding:28px 0;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:700;
+}
+
+.bk-nav__links > a:not(.bk-btn)::after{
+  content:"";
+  position:absolute;
+  right:100%;
+  bottom:20px;
+  left:0;
+  height:2px;
+  background:var(--blue);
+  transition:right var(--fast) var(--ease);
+}
+
+.bk-nav__links > a:not(.bk-btn):hover::after,
+.bk-nav__links > a[aria-current="true"]::after{
+  right:0;
+}
+
+.bk-menu-toggle{
+  width:44px;
+  height:44px;
+  display:none;
+  padding:10px;
+  border:0;
+  background:transparent;
+}
+
+.bk-menu-toggle span{
+  display:block;
+  width:100%;
+  height:2px;
+  margin:5px 0;
+  background:var(--navy);
+  transition:transform var(--fast) ease,opacity var(--fast) ease;
+}
+
+/* Hero */
+.bk-hero{
+  position:relative;
+  min-height:760px;
+  display:grid;
+  align-items:center;
+  overflow:hidden;
+  background:#06163e;
+}
+
+.bk-hero__media{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  background:
+    linear-gradient(135deg,rgba(7,26,74,.92),rgba(10,102,255,.34)),
+    #071a4a;
+}
+
+.bk-hero__slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  object-position:center 55%;
+  filter:saturate(.92) contrast(1.04) brightness(.84);
+  transform:scale(1.02);
+  transition:opacity 1300ms ease,transform 7000ms ease;
+}
+
+.bk-hero__slide.is-active{
+  opacity:1;
+  transform:scale(1.055);
+}
+
+.bk-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(7,26,74,.94) 0%,rgba(7,26,74,.86) 34%,rgba(7,26,74,.58) 59%,rgba(7,26,74,.22) 100%),
+    linear-gradient(180deg,rgba(4,13,39,.04),rgba(4,13,39,.4));
+}
+
+.bk-hero__content{
+  position:relative;
+  z-index:2;
+  padding:110px 0 150px;
+}
+
+.bk-hero__content .bk-eyebrow{
+  color:#72d8ff;
+}
+
+.bk-hero__content .bk-eyebrow::before{
+  background:#72d8ff;
+}
+
+.bk-hero h1{
+  max-width:11ch;
+  color:var(--white);
+  font-size:clamp(48px,6vw,78px);
+  font-weight:800;
+  letter-spacing:-.055em;
+  line-height:.96;
+}
+
+.bk-hero p{
+  max-width:650px;
+  margin:25px 0 36px;
+  color:rgba(255,255,255,.84);
+  font-size:20px;
+}
+
+.bk-hero__actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+.bk-hero__proof{
+  margin-top:44px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:22px;
+  color:rgba(255,255,255,.82);
+  font-size:14px;
+  font-weight:700;
+}
+
+.bk-hero__proof span{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.bk-hero__proof i{
+  color:#72d8ff;
+}
+
+.bk-hero__dots{
+  position:absolute;
+  z-index:4;
+  right:max(28px,calc((100vw - var(--container))/2));
+  bottom:34px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+.bk-hero__dot{
+  width:9px;
+  height:9px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.68);
+  border-radius:50%;
+  background:transparent;
+  transition:width var(--fast) ease,border-radius var(--fast) ease,background var(--fast) ease;
+}
+
+.bk-hero__dot.is-active{
+  width:28px;
+  border-radius:20px;
+  background:var(--white);
+}
+
+/* Trust strip */
+.bk-trust{
+  border-bottom:1px solid var(--line);
+  background:var(--white);
+}
+
+.bk-trust__grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.bk-trust__item{
+  min-height:156px;
+  padding:36px 30px;
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  border-right:1px solid var(--line);
+}
+
+.bk-trust__item:last-child{
+  border-right:0;
+}
+
+.bk-trust__icon{
+  width:36px;
+  height:36px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  color:var(--blue);
+  font-size:22px;
+}
+
+.bk-trust__item h3{
+  color:var(--navy);
+  font-size:16px;
+  font-weight:800;
+}
+
+.bk-trust__item p{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.55;
+}
+
+/* About */
+.bk-about{
+  padding-top:136px;
+}
+
+.bk-about__grid{
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  gap:90px;
+  align-items:center;
+}
+
+.bk-about__media{
+  position:relative;
+  min-height:590px;
+}
+
+.bk-about__main-img{
+  position:absolute;
+  inset:0 72px 52px 0;
+  overflow:hidden;
+  border-radius:var(--radius);
+  background:#dfe7f2;
+}
+
+.bk-about__small-img{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:47%;
+  height:260px;
+  overflow:hidden;
+  border:9px solid var(--white);
+  border-radius:var(--radius);
+  background:#dfe7f2;
+  box-shadow:var(--shadow-soft);
+}
+
+.bk-about__badge{
+  position:absolute;
+  top:36px;
+  right:20px;
+  width:180px;
+  padding:20px;
+  border-left:4px solid var(--cyan);
+  color:var(--white);
+  background:var(--navy);
+}
+
+.bk-about__badge strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:24px;
+}
+
+.bk-about__badge span{
+  color:rgba(255,255,255,.72);
+  font-size:12px;
+}
+
+.bk-about__content .bk-title{
+  max-width:13ch;
+}
+
+.bk-about__list{
+  margin:30px 0 36px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px 24px;
+}
+
+.bk-about__list li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--navy);
+  font-size:14px;
+  font-weight:700;
+}
+
+.bk-about__list i{
+  color:var(--success);
+}
+
+/* Services */
+.bk-services-showcase{
+  overflow:hidden;
+  background:#0b0e14;
+}
+
+.bk-services-showcase__head{
+  margin-bottom:46px;
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+  gap:70px;
+  align-items:end;
+}
+
+.bk-services-showcase .bk-title{
+  max-width:14ch;
+  color:var(--white);
+}
+
+.bk-services-showcase .bk-lede{
+  margin-top:0;
+  color:rgba(255,255,255,.64);
+}
+
+.bk-service-panel-groups{
+  display:grid;
+  gap:14px;
+}
+
+.bk-service-panels{
+  min-height:530px;
+  display:flex;
+  gap:14px;
+}
+
+.bk-service-panel{
+  position:relative;
+  min-width:0;
+  flex:1 1 0;
+  overflow:hidden;
+  isolation:isolate;
+  background:#111722;
+}
+
+.bk-service-panel::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  border:1px solid rgba(255,255,255,.1);
+  pointer-events:none;
+}
+
+.bk-service-panel > img{
+  position:absolute;
+  inset:0;
+  object-position:center;
+  filter:saturate(.78) contrast(1.04) brightness(.8);
+  transform:scale(1.015);
+}
+
+.bk-service-panel__shade{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(180deg,rgba(3,9,22,.08) 0%,rgba(3,9,22,.14) 34%,rgba(3,9,22,.78) 100%);
+  transition:background 380ms ease;
+}
+
+.bk-service-panel__content{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  padding:34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  color:var(--white);
+}
+
+.bk-service-panel__number{
+  position:absolute;
+  top:30px;
+  left:32px;
+  color:rgba(255,255,255,.65);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.16em;
+}
+
+.bk-service-panel h3{
+  max-width:9ch;
+  color:var(--white);
+  font-size:clamp(29px,2.8vw,45px);
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:.98;
+}
+
+.bk-service-panel__details{
+  max-height:0;
+  max-width:390px;
+  margin-top:0;
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(10px);
+  transition:max-height 420ms var(--ease),margin-top 420ms var(--ease),opacity 260ms ease,transform 420ms var(--ease);
+}
+
+.bk-service-panel__details p{
+  color:rgba(255,255,255,.78);
+  font-size:15px;
+  line-height:1.7;
+}
+
+.bk-service-panel__arrow{
+  width:48px;
+  height:48px;
+  margin-top:24px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.78);
+  border-radius:50%;
+  color:var(--white);
+  opacity:0;
+  transform:translateY(10px);
+  transition:opacity 260ms ease,transform 420ms var(--ease),background var(--fast) ease,color var(--fast) ease;
+}
+
+.bk-service-panel__arrow:hover{
+  color:var(--navy);
+  background:var(--white);
+}
+
+.bk-service-panel:hover .bk-service-panel__shade,
+.bk-service-panel:focus-within .bk-service-panel__shade,
+.bk-service-panel:focus .bk-service-panel__shade{
+  background:linear-gradient(180deg,rgba(6,22,63,.20) 0%,rgba(7,26,74,.45) 38%,rgba(7,26,74,.96) 100%);
+}
+
+.bk-service-panel:hover .bk-service-panel__details,
+.bk-service-panel:focus-within .bk-service-panel__details,
+.bk-service-panel:focus .bk-service-panel__details{
+  max-height:140px;
+  margin-top:18px;
+  opacity:1;
+  transform:none;
+}
+
+.bk-service-panel:hover .bk-service-panel__arrow,
+.bk-service-panel:focus-within .bk-service-panel__arrow,
+.bk-service-panel:focus .bk-service-panel__arrow{
+  opacity:1;
+  transform:none;
+}
+
+/* Industries */
+.bk-industries-overlap{
+  position:relative;
+  padding:72px 0 82px;
+  border-block:1px solid #dde5ef;
+  background:linear-gradient(180deg,#f7f9fc 0%,#f1f5fa 100%);
+}
+
+.bk-industries-overlap::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:5px;
+  background:linear-gradient(90deg,var(--navy),var(--blue),var(--cyan));
+}
+
+.bk-industries-overlap__stage{
+  position:relative;
+  min-height:560px;
+  width:min(100%,1160px);
+  margin-inline:auto;
+}
+
+.bk-industries-overlap__media{
+  position:absolute;
+  top:0;
+  right:0;
+  width:64%;
+  height:560px;
+  overflow:hidden;
+  border-radius:10px;
+  background:#dfe7f2;
+  transform:translateX(-10px);
+}
+
+.bk-industries-overlap__media::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(7,26,74,.16),transparent 28%),linear-gradient(180deg,transparent 66%,rgba(7,26,74,.18));
+}
+
+.bk-industries-overlap__media img{
+  object-position:center;
+  filter:saturate(.9) contrast(1.03);
+}
+
+.bk-industries-overlap__card{
+  position:absolute;
+  top:48px;
+  left:0;
+  z-index:2;
+  width:54%;
+  overflow:hidden;
+  border:1px solid #cfd8e5;
+  border-radius:8px;
+  background:var(--white);
+  box-shadow:0 14px 34px rgba(7,26,74,.10);
+  transform:translateX(10px);
+}
+
+.bk-industries-overlap__card::before{
+  content:"";
+  display:block;
+  width:100%;
+  height:4px;
+  background:var(--navy);
+}
+
+.bk-industries-overlap__intro{
+  padding:38px 42px 36px;
+}
+
+.bk-industries-overlap__eyebrow{
+  display:block;
+  margin-bottom:12px;
+  color:var(--blue);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.bk-industries-overlap__intro h2{
+  max-width:13ch;
+  color:var(--navy);
+  font-size:clamp(32px,3.4vw,45px);
+  font-weight:800;
+  letter-spacing:-.035em;
+  line-height:1.02;
+}
+
+.bk-industries-overlap__subtitle{
+  margin-top:12px;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:700;
+}
+
+.bk-industries-overlap__description{
+  max-width:50ch;
+  margin-top:24px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.75;
+}
+
+.bk-industries-overlap__solutions{
+  padding:28px 42px 30px;
+  border-block:1px solid #dce3ec;
+  background:#f5f8fc;
+}
+
+.bk-industries-overlap__solutions h3{
+  margin-bottom:22px;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:800;
+}
+
+.bk-industries-overlap__grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px 24px;
+}
+
+.bk-industries-overlap__item{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.bk-industries-overlap__item span{
+  width:32px;
+  height:32px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  border-radius:7px;
+  color:var(--white);
+  background:var(--blue);
+  font-size:12px;
+}
+
+.bk-industries-overlap__item strong{
+  overflow:hidden;
+  color:var(--navy);
+  font-size:12px;
+  font-weight:700;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.bk-industries-overlap__footer{
+  padding:24px 42px 28px;
+}
+
+.bk-industries-overlap__footer .bk-btn{
+  width:100%;
+  min-height:52px;
+  background:var(--navy);
+  box-shadow:none;
+}
+
+.bk-industries-overlap__footer .bk-btn:hover{
+  background:var(--blue);
+}
+
+/* Why choose */
+.bk-why{
+  color:var(--white);
+  background:var(--navy);
+}
+
+.bk-why__grid{
+  display:grid;
+  grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);
+  gap:78px;
+  align-items:start;
+}
+
+.bk-why .bk-title{
+  color:var(--white);
+}
+
+.bk-why .bk-lede{
+  color:rgba(255,255,255,.72);
+}
+
+.bk-why__features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid rgba(255,255,255,.18);
+}
+
+.bk-why__feature{
+  min-height:205px;
+  padding:32px 28px;
+  border-right:1px solid rgba(255,255,255,.14);
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+
+.bk-why__feature:nth-child(2n){
+  border-right:0;
+}
+
+.bk-why__feature i{
+  margin-bottom:22px;
+  color:#72d8ff;
+  font-size:24px;
+}
+
+.bk-why__feature h3{
+  font-size:17px;
+  font-weight:800;
+}
+
+.bk-why__feature p{
+  margin-top:9px;
+  color:rgba(255,255,255,.65);
+  font-size:13px;
+}
+
+/* Process */
+.bk-process__head{
+  margin-bottom:54px;
+  text-align:center;
+}
+
+.bk-process__grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  position:relative;
+}
+
+.bk-process__grid::before{
+  content:"";
+  position:absolute;
+  top:33px;
+  right:10%;
+  left:10%;
+  height:2px;
+  background:#d8e0ec;
+}
+
+.bk-process__step{
+  position:relative;
+  z-index:2;
+  padding:0 18px;
+  text-align:center;
+}
+
+.bk-process__number{
+  width:66px;
+  height:66px;
+  margin:0 auto 22px;
+  display:grid;
+  place-items:center;
+  border:6px solid var(--surface);
+  border-radius:50%;
+  color:var(--white);
+  background:var(--navy);
+  box-shadow:0 0 0 2px var(--navy);
+  font-size:17px;
+  font-weight:800;
+}
+
+.bk-process__step h3{
+  color:var(--navy);
+  font-size:17px;
+  font-weight:800;
+}
+
+.bk-process__step p{
+  margin-top:9px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Fleet */
+.bk-fleet__grid{
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:72px;
+  align-items:center;
+}
+
+.bk-fleet__media{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  grid-template-rows:280px 240px;
+  gap:6px;
+}
+
+.bk-fleet__media figure{
+  overflow:hidden;
+  background:#dfe7f2;
+}
+
+.bk-fleet__media figure:first-child{
+  grid-row:1 / 3;
+}
+
+.bk-fleet__media img{
+  transition:transform 700ms var(--ease);
+}
+
+.bk-fleet__media figure:hover img{
+  transform:scale(1.035);
+}
+
+.bk-fleet__content .bk-title{
+  max-width:12ch;
+}
+
+.bk-fleet__list{
+  margin:30px 0 34px;
+  display:grid;
+  gap:18px;
+}
+
+.bk-fleet__list li{
+  display:grid;
+  grid-template-columns:42px 1fr;
+  gap:14px;
+}
+
+.bk-fleet__list i{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  color:var(--blue);
+  background:#edf4ff;
+}
+
+.bk-fleet__list strong{
+  display:block;
+  color:var(--navy);
+  font-size:15px;
+}
+
+.bk-fleet__list span{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Coverage */
+.bk-coverage{
+  overflow:hidden;
+  color:var(--white);
+  background:#0a255c;
+}
+
+.bk-coverage__grid{
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  gap:70px;
+  align-items:center;
+}
+
+.bk-coverage .bk-title{
+  color:var(--white);
+}
+
+.bk-coverage .bk-lede{
+  color:rgba(255,255,255,.72);
+}
+
+.bk-coverage__cities{
+  margin-top:28px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.bk-coverage__cities span{
+  padding:9px 13px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:6px;
+  color:rgba(255,255,255,.82);
+  font-size:12px;
+  font-weight:700;
+}
+
+.bk-map{
+  position:relative;
+  min-height:500px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 55% 48%,rgba(0,174,234,.15),transparent 38%),
+    linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.01));
+}
+
+.bk-map svg{
+  position:absolute;
+  inset:28px 28px 64px;
+  width:calc(100% - 56px);
+  height:calc(100% - 92px);
+}
+
+.bk-map__land{
+  filter:drop-shadow(0 10px 18px rgba(0,0,0,.18));
+}
+
+.bk-map__city > circle:not(.bk-map__pulse){
+  fill:var(--cyan);
+  stroke:var(--white);
+  stroke-width:2;
+  filter:url(#bkMapGlow);
+}
+
+.bk-map__city text{
+  fill:var(--white);
+  font-family:var(--font);
+  font-size:14px;
+  font-weight:700;
+  paint-order:stroke;
+  stroke:#0a255c;
+  stroke-width:4px;
+  stroke-linejoin:round;
+  pointer-events:none;
+}
+
+.bk-map__city--small text{
+  font-size:12px;
+}
+
+.bk-map__pulse{
+  fill:rgba(0,174,234,.10);
+  stroke:rgba(114,216,255,.42);
+  stroke-width:2;
+}
+
+.bk-map__legend{
+  position:absolute;
+  left:22px;
+  bottom:18px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px 20px;
+  color:rgba(255,255,255,.68);
+  font-size:10px;
+  font-weight:700;
+}
+
+.bk-map__legend span{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.bk-map__legend i{
+  width:8px;
+  height:8px;
+  display:block;
+  border-radius:50%;
+  background:var(--cyan);
+  box-shadow:0 0 0 3px rgba(0,174,234,.14);
+}
+
+.bk-map__legend-route i{
+  width:26px;
+  height:0;
+  border-radius:0;
+  border-top:2px dashed rgba(114,216,255,.55);
+  background:transparent;
+  box-shadow:none;
+}
+
+.bk-map__note{
+  position:absolute;
+  right:22px;
+  bottom:18px;
+  max-width:240px;
+  color:rgba(255,255,255,.5);
+  font-size:10px;
+  text-align:right;
+}
+
+/* Customer value */
+.bk-stories__head{
+  margin-bottom:54px;
+  text-align:center;
+}
+
+.bk-stories__grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-block:1px solid var(--line);
+}
+
+.bk-story{
+  padding:38px 34px;
+  border-right:1px solid var(--line);
+}
+
+.bk-story:last-child{
+  border-right:0;
+}
+
+.bk-story__icon{
+  color:var(--blue);
+  font-size:24px;
+}
+
+.bk-story h3{
+  margin-top:22px;
+  color:var(--navy);
+  font-size:19px;
+  font-weight:800;
+}
+
+.bk-story p{
+  margin-top:11px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.bk-story small{
+  display:block;
+  margin-top:18px;
+  color:#8994a8;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+/* FAQ */
+.bk-faq__head{
+  margin-bottom:54px;
+  text-align:center;
+}
+
+.bk-faq__grid{
+  width:min(900px,100%);
+  margin-inline:auto;
+}
+
+.bk-faq__item{
+  border-top:1px solid var(--line);
+}
+
+.bk-faq__item:last-child{
+  border-bottom:1px solid var(--line);
+}
+
+.bk-faq__question{
+  width:100%;
+  padding:24px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border:0;
+  color:var(--navy);
+  background:transparent;
+  font-size:17px;
+  font-weight:800;
+  text-align:left;
+}
+
+.bk-faq__question i{
+  color:var(--blue);
+  transition:transform var(--fast) ease;
+}
+
+.bk-faq__item.is-open .bk-faq__question i{
+  transform:rotate(45deg);
+}
+
+.bk-faq__answer{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  color:var(--muted);
+  transition:max-height 420ms var(--ease),opacity var(--fast) ease,padding var(--fast) ease;
+}
+
+.bk-faq__item.is-open .bk-faq__answer{
+  max-height:240px;
+  padding:0 0 24px;
+  opacity:1;
+}
+
+/* Quote CTA */
+.bk-quote-trigger-section{
+  padding:86px 0;
+  color:var(--white);
+  background:linear-gradient(135deg,rgba(7,26,74,.98),rgba(10,75,164,.96));
+}
+
+.bk-quote-trigger-section__inner{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:42px 56px;
+  align-items:center;
+}
+
+.bk-quote-trigger-section .bk-eyebrow{
+  color:#72d8ff;
+}
+
+.bk-quote-trigger-section .bk-eyebrow::before{
+  background:#72d8ff;
+}
+
+.bk-quote-trigger-section h2{
+  max-width:14ch;
+  color:var(--white);
+  font-size:clamp(36px,4.6vw,60px);
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:1.02;
+}
+
+.bk-quote-trigger-section p{
+  max-width:62ch;
+  margin-top:18px;
+  color:rgba(255,255,255,.74);
+  font-size:16px;
+}
+
+.bk-quote-trigger-section > .bk-container > .bk-btn{
+  min-width:190px;
+  color:var(--navy);
+  background:var(--white);
+  box-shadow:none;
+}
+
+.bk-quote-trigger-section > .bk-container > .bk-btn:hover{
+  background:#e9eef7;
+}
+
+.bk-quote-contact-strip{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border-block:1px solid rgba(255,255,255,.2);
+}
+
+.bk-quote-contact-strip__item{
+  min-height:104px;
+  padding:22px 24px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  border-right:1px solid rgba(255,255,255,.18);
+  color:var(--white);
+}
+
+.bk-quote-contact-strip__item:last-child{
+  border-right:0;
+}
+
+.bk-quote-contact-strip__item i{
+  width:40px;
+  height:40px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(114,216,255,.35);
+  border-radius:8px;
+  color:#72d8ff;
+  background:rgba(255,255,255,.04);
+}
+
+.bk-quote-contact-strip__item strong,
+.bk-quote-contact-strip__item small{
+  display:block;
+}
+
+.bk-quote-contact-strip__item strong{
+  font-size:13px;
+}
+
+.bk-quote-contact-strip__item small{
+  margin-top:4px;
+  color:rgba(255,255,255,.66);
+  font-size:12px;
+}
+
+/* Quote modal */
+.bk-modal{
+  position:fixed;
+  inset:0;
+  z-index:5000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  overflow:hidden;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity 240ms ease,visibility 240ms ease;
+}
+
+.bk-modal.is-open{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.bk-modal__backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(3,10,29,.78);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.bk-modal__dialog{
+  position:relative;
+  z-index:2;
+  width:min(920px,100%);
+  max-height:calc(100vh - 48px);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  border-radius:14px;
+  background:var(--white);
+  box-shadow:0 28px 80px rgba(0,0,0,.28);
+  transform:translateY(18px) scale(.985);
+  transition:transform 280ms var(--ease);
+}
+
+.bk-modal.is-open .bk-modal__dialog{
+  transform:none;
+}
+
+.bk-modal__close{
+  position:absolute;
+  top:18px;
+  right:18px;
+  z-index:10;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:50%;
+  color:var(--white);
+  background:rgba(255,255,255,.12);
+  font-size:18px;
+}
+
+.bk-modal__close:hover{
+  background:rgba(255,255,255,.22);
+}
+
+.bk-modal__intro{
+  flex:0 0 auto;
+  padding:42px 76px 38px 42px;
+  color:var(--white);
+  background:linear-gradient(135deg,#071a4a,#123b7c);
+}
+
+.bk-modal__intro .bk-eyebrow{
+  color:#72d8ff;
+}
+
+.bk-modal__intro .bk-eyebrow::before{
+  background:#72d8ff;
+}
+
+.bk-modal__intro h2{
+  max-width:14ch;
+  margin-top:9px;
+  color:var(--white);
+  font-size:clamp(36px,4.6vw,54px);
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:1;
+}
+
+.bk-modal__intro > p{
+  max-width:58ch;
+  margin-top:18px;
+  color:rgba(255,255,255,.72);
+  font-size:14px;
+  line-height:1.75;
+}
+
+.bk-modal__form-wrap{
+  flex:1 1 auto;
+  min-height:0;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  padding:36px 42px 40px;
+  background:var(--white);
+  scrollbar-gutter:stable;
+}
+
+.bk-quote__form{
+  width:100%;
+}
+
+.bk-form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+
+.bk-field{
+  display:grid;
+  gap:9px;
+}
+
+.bk-field--full{
+  grid-column:1 / -1;
+}
+
+.bk-field label{
+  color:var(--navy);
+  font-size:12px;
+  font-weight:800;
+}
+
+.bk-field input,
+.bk-field select,
+.bk-field textarea{
+  width:100%;
+  min-height:52px;
+  padding:12px 13px;
+  border:1px solid #ccd5e2;
+  border-radius:7px;
+  color:var(--ink);
+  background:#f7f9fc;
+  outline:0;
+  transition:border-color var(--fast) ease,box-shadow var(--fast) ease;
+}
+
+.bk-field textarea{
+  min-height:132px;
+  resize:vertical;
+}
+
+.bk-field input:focus,
+.bk-field select:focus,
+.bk-field textarea:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(10,102,255,.10);
+}
+
+.bk-modal__form-footer{
+  margin-top:26px;
+  padding-top:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border-top:1px solid var(--line);
+}
+
+.bk-form-note{
+  color:var(--muted);
+  font-size:11px;
+}
+
+.bk-form-status{
+  min-height:20px;
+  margin-top:14px;
+  color:var(--success);
+  font-size:13px;
+  font-weight:700;
+}
+
+/* Footer */
+.bk-footer{
+  padding:76px 0 28px;
+  color:rgba(255,255,255,.66);
+  background:#050c20;
+}
+
+.bk-footer__grid{
+  padding-bottom:48px;
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1.15fr;
+  gap:48px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.bk-footer .bk-logo{
+  color:var(--white);
+}
+
+.bk-footer__brand p{
+  max-width:38ch;
+  margin-top:20px;
+  font-size:13px;
+}
+
+.bk-footer h3{
+  margin-bottom:20px;
+  color:var(--white);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.bk-footer li{
+  margin-bottom:11px;
+  font-size:13px;
+}
+
+.bk-footer a{
+  transition:color var(--fast) ease;
+}
+
+.bk-footer a:hover{
+  color:var(--white);
+}
+
+.bk-footer__social{
+  margin-top:22px;
+  display:flex;
+  gap:10px;
+}
+
+.bk-footer__social a{
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.14);
+}
+
+.bk-footer__social a:hover{
+  border-color:var(--blue);
+  background:var(--blue);
+}
+
+.bk-footer__bottom{
+  padding-top:24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:11px;
+}
+
+.bk-floating-quote{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:990;
+  box-shadow:0 16px 34px rgba(10,102,255,.32);
+}
+
+.bk-mobile-actions{
+  display:none;
+}
+
+/* Motion */
+.bk-reveal{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity 650ms var(--ease),transform 650ms var(--ease);
+}
+
+.bk-reveal.is-visible{
+  opacity:1;
+  transform:none;
+}
+
+@media (scripting:none){
+  .bk-reveal{
+    opacity:1;
+    transform:none;
+  }
+}
+
+@media (max-width:1100px){
+  .bk-nav__links{
+    gap:18px;
+  }
+
+  .bk-nav__links > a:not(.bk-btn){
+    font-size:12px;
+  }
+
+  .bk-trust__grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .bk-trust__item:nth-child(2){
+    border-right:0;
+  }
+
+  .bk-trust__item:nth-child(-n+2){
+    border-bottom:1px solid var(--line);
+  }
+
+  .bk-process__grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:42px 10px;
+  }
+
+  .bk-process__grid::before{
+    display:none;
+  }
+
+  .bk-footer__grid{
+    grid-template-columns:1.5fr 1fr 1fr;
+  }
+
+  .bk-footer__grid > :last-child{
+    grid-column:1 / -1;
+  }
+}
+
+@media (max-width:1000px){
+  .bk-services-showcase__head{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .bk-service-panels{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .bk-service-panel{
+    min-height:490px;
+  }
+
+  .bk-service-panel__details{
+    max-height:140px;
+    margin-top:18px;
+    opacity:1;
+    transform:none;
+  }
+
+  .bk-service-panel__arrow{
+    opacity:1;
+    transform:none;
+  }
+}
+
+@media (max-width:960px){
+  .bk-industries-overlap__stage{
+    display:grid;
+    min-height:auto;
+  }
+
+  .bk-industries-overlap__media,
+  .bk-industries-overlap__card{
+    position:relative;
+    top:auto;
+    right:auto;
+    left:auto;
+    width:100%;
+    transform:none;
+  }
+
+  .bk-industries-overlap__media{
+    height:460px;
+    border-radius:10px 10px 0 0;
+  }
+
+  .bk-industries-overlap__card{
+    margin-top:-62px;
+  }
+}
+
+@media (max-width:900px){
+  .bk-utility{
+    display:none;
+  }
+
+  .bk-nav__inner{
+    min-height:72px;
+  }
+
+  .bk-menu-toggle{
+    position:relative;
+    z-index:1002;
+    display:block;
+  }
+
+  .bk-nav__links{
+    position:fixed;
+    inset:72px 0 0;
+    z-index:1001;
+    padding:22px 24px 42px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    overflow-y:auto;
+    background:rgba(255,255,255,.99);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transform:translateY(-8px);
+    transition:opacity var(--fast) ease,visibility var(--fast) ease,transform var(--fast) ease;
+  }
+
+  .bk-nav__links.is-open{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:none;
+  }
+
+  .bk-nav__links > a:not(.bk-btn){
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+    font-size:16px;
+  }
+
+  .bk-nav__links > a:not(.bk-btn)::after{
+    display:none;
+  }
+
+  .bk-nav__links .bk-btn{
+    margin-top:18px;
+  }
+
+  .bk-menu-toggle.is-open span:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
+  }
+
+  .bk-menu-toggle.is-open span:nth-child(2){
+    opacity:0;
+  }
+
+  .bk-menu-toggle.is-open span:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+  }
+
+  .bk-about__grid,
+  .bk-why__grid,
+  .bk-fleet__grid,
+  .bk-coverage__grid{
+    grid-template-columns:1fr;
+  }
+
+  .bk-about__media{
+    min-height:520px;
+  }
+
+  .bk-why__grid,
+  .bk-fleet__grid,
+  .bk-coverage__grid{
+    gap:52px;
+  }
+
+  .bk-stories__grid{
+    grid-template-columns:1fr;
+  }
+
+  .bk-story{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .bk-story:last-child{
+    border-bottom:0;
+  }
+
+  .bk-quote-trigger-section__inner{
+    grid-template-columns:1fr;
+  }
+
+  .bk-quote-contact-strip{
+    grid-template-columns:1fr;
+  }
+
+  .bk-quote-contact-strip__item{
+    min-height:auto;
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.18);
+  }
+
+  .bk-quote-contact-strip__item:last-child{
+    border-bottom:0;
+  }
+
+  .bk-floating-quote{
+    display:none;
+  }
+
+  .bk-mobile-actions{
+    position:fixed;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:995;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-top:1px solid var(--line);
+    background:var(--white);
+    box-shadow:0 -8px 24px rgba(7,26,74,.10);
+  }
+
+  .bk-mobile-actions a{
+    min-height:56px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    color:var(--navy);
+    font-size:13px;
+    font-weight:800;
+  }
+
+  .bk-mobile-actions a:last-child{
+    color:var(--white);
+    background:var(--blue);
+  }
+
+  body{
+    padding-bottom:56px;
+  }
+}
+
+@media (max-width:700px){
+  .bk-container{
+    width:min(100% - 28px,var(--container));
+  }
+
+  .bk-section{
+    padding:80px 0;
+  }
+
+  .bk-title{
+    font-size:clamp(32px,10vw,45px);
+  }
+
+  .bk-lede{
+    font-size:16px;
+  }
+
+  .bk-hero{
+    min-height:680px;
+  }
+
+  .bk-hero__content{
+    padding:88px 0 118px;
+  }
+
+  .bk-hero h1{
+    font-size:clamp(44px,13vw,62px);
+  }
+
+  .bk-hero p{
+    font-size:17px;
+  }
+
+  .bk-hero__actions{
+    width:100%;
+  }
+
+  .bk-hero__actions .bk-btn{
+    width:100%;
+  }
+
+  .bk-hero__slide{
+    object-position:center;
+  }
+
+  .bk-hero__dots{
+    right:14px;
+    bottom:20px;
+  }
+
+  .bk-trust__grid,
+  .bk-about__list,
+  .bk-why__features,
+  .bk-process__grid,
+  .bk-footer__grid{
+    grid-template-columns:1fr;
+  }
+
+  .bk-trust__item{
+    min-height:auto;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .bk-about{
+    padding-top:104px;
+  }
+
+  .bk-about__media{
+    min-height:430px;
+  }
+
+  .bk-about__main-img{
+    inset:0 28px 40px 0;
+  }
+
+  .bk-about__small-img{
+    width:48%;
+    height:185px;
+    border-width:6px;
+  }
+
+  .bk-about__badge{
+    top:22px;
+    width:150px;
+    padding:16px;
+  }
+
+  .bk-service-panel{
+    min-height:520px;
+  }
+
+  .bk-service-panel__content{
+    padding:26px 22px;
+  }
+
+  .bk-service-panel__number{
+    top:24px;
+    left:22px;
+  }
+
+  .bk-service-panel h3{
+    font-size:36px;
+  }
+
+  .bk-industries-overlap{
+    padding:58px 0 66px;
+  }
+
+  .bk-industries-overlap__media{
+    height:320px;
+  }
+
+  .bk-industries-overlap__card{
+    margin-top:-36px;
+  }
+
+  .bk-industries-overlap__intro{
+    padding:28px 22px;
+  }
+
+  .bk-industries-overlap__intro h2{
+    font-size:34px;
+  }
+
+  .bk-industries-overlap__solutions{
+    padding:24px 22px 26px;
+  }
+
+  .bk-industries-overlap__grid{
+    grid-template-columns:1fr 1fr;
+    gap:16px 18px;
+  }
+
+  .bk-industries-overlap__footer{
+    padding:20px 22px 22px;
+  }
+
+  .bk-fleet__media{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:280px 180px;
+  }
+
+  .bk-map{
+    min-height:430px;
+  }
+
+  .bk-map svg{
+    inset:22px 14px 90px;
+    width:calc(100% - 28px);
+    height:calc(100% - 112px);
+  }
+
+  .bk-map__legend{
+    right:18px;
+    bottom:42px;
+    gap:10px 14px;
+  }
+
+  .bk-map__note{
+    right:18px;
+    bottom:14px;
+    left:18px;
+    max-width:none;
+    text-align:left;
+  }
+
+  .bk-map__city text{
+    font-size:11px;
+  }
+
+  .bk-map__city--small text{
+    font-size:10px;
+  }
+
+  .bk-quote-trigger-section{
+    padding:72px 0;
+  }
+
+  .bk-quote-trigger-section > .bk-container > .bk-btn{
+    width:100%;
+  }
+
+  .bk-modal{
+    align-items:stretch;
+    padding:0;
+  }
+
+  .bk-modal__dialog{
+    width:100%;
+    min-height:100vh;
+    max-height:100vh;
+    border-radius:0;
+  }
+
+  .bk-modal__intro{
+    padding:34px 62px 28px 22px;
+  }
+
+  .bk-modal__intro h2{
+    font-size:36px;
+  }
+
+  .bk-modal__form-wrap{
+    padding:26px 22px 34px;
+  }
+
+  .bk-form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .bk-field--full{
+    grid-column:auto;
+  }
+
+  .bk-modal__form-footer{
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .bk-modal__form-footer .bk-btn{
+    width:100%;
+  }
+
+  .bk-footer__grid > :last-child{
+    grid-column:auto;
+  }
+
+  .bk-footer__bottom{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+
+  .bk-reveal{
+    opacity:1!important;
+    transform:none!important;
+  }
+
+  .bk-hero__slide{
+    transform:none!important;
+  }
+}
+
+/* ==========================================================
+   MOBILE HEADER NAVIGATION FIX
+   Ensures all four links are always visible and scrollable.
+========================================================== */
+@media (max-width:900px){
+  .bk-nav{
+    position:sticky;
+    top:0;
+    z-index:4000;
+  }
+
+  .bk-nav__inner{
+    width:100%;
+    min-height:72px;
+    padding:0 18px;
+  }
+
+  .bk-logo{
+    min-width:0;
+    font-size:20px;
+  }
+
+  .bk-logo__mark{
+    width:34px;
+    height:34px;
+    font-size:13px;
+  }
+
+  .bk-menu-toggle{
+    position:relative;
+    z-index:4002;
+    flex:0 0 auto;
+  }
+
+  .bk-nav__links{
+    position:fixed !important;
+    inset:72px 0 0 !important;
+    z-index:4001 !important;
+    width:100vw !important;
+    height:calc(100dvh - 72px) !important;
+    max-height:calc(100dvh - 72px) !important;
+    padding:
+      20px
+      max(24px,env(safe-area-inset-right))
+      calc(34px + env(safe-area-inset-bottom))
+      max(24px,env(safe-area-inset-left)) !important;
+    display:grid !important;
+    grid-template-rows:repeat(4,minmax(64px,auto)) 1fr;
+    align-content:start;
+    gap:0 !important;
+    overflow-y:auto !important;
+    overscroll-behavior:contain;
+    background:#ffffff !important;
+    box-shadow:0 18px 40px rgba(7,26,74,.14);
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .bk-nav__links > a{
+    width:100%;
+    min-height:64px;
+    padding:18px 4px !important;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid var(--line) !important;
+    color:var(--navy) !important;
+    font-size:19px !important;
+    font-weight:800 !important;
+    line-height:1.2;
+  }
+
+  .bk-nav__links > a::before{
+    color:var(--blue);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.12em;
+  }
+
+  .bk-nav__links > a:nth-child(1)::before{content:"01";}
+  .bk-nav__links > a:nth-child(2)::before{content:"02";}
+  .bk-nav__links > a:nth-child(3)::before{content:"03";}
+  .bk-nav__links > a:nth-child(4)::before{content:"04";}
+
+  .bk-nav__links > a::after{
+    content:"\f061" !important;
+    position:static !important;
+    width:auto !important;
+    height:auto !important;
+    display:block !important;
+    color:var(--blue);
+    background:none !important;
+    font-family:"Font Awesome 6 Free";
+    font-size:14px;
+    font-weight:900;
+  }
+
+  .bk-nav__links:not(.is-open){
+    opacity:0 !important;
+    visibility:hidden !important;
+    pointer-events:none !important;
+    transform:translateY(-10px) !important;
+  }
+
+  .bk-nav__links.is-open{
+    opacity:1 !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+    transform:none !important;
+  }
+
+  body.menu-open{
+    overflow:hidden !important;
+    touch-action:none;
+  }
+}
+
+@media (max-width:420px){
+  .bk-logo > span:last-child{
+    font-size:18px;
+  }
+
+  .bk-nav__inner{
+    padding-inline:14px;
+  }
+
+  .bk-nav__links{
+    padding-left:18px !important;
+    padding-right:18px !important;
+  }
+}
+
+@media (max-height:520px) and (max-width:900px){
+  .bk-nav__links{
+    grid-template-rows:repeat(4,minmax(52px,auto)) 1fr;
+    padding-top:10px !important;
+  }
+
+  .bk-nav__links > a{
+    min-height:52px;
+    padding-block:12px !important;
+    font-size:17px !important;
+  }
+}
+
+
+/* ==========================================================
+   HOW IT WORKS — SIMPLE PROCESS FLOW
+========================================================== */
+.bk-process__head{
+  margin-bottom:54px;
+  text-align:center;
+}
+
+.bk-process__grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:24px;
+}
+
+.bk-process__grid::before{
+  content:"";
+  position:absolute;
+  top:34px;
+  right:9%;
+  left:9%;
+  height:2px;
+  background:#d6deea;
+}
+
+.bk-process__step{
+  position:relative;
+  z-index:2;
+  padding:0 14px;
+  text-align:center;
+}
+
+.bk-process__number{
+  width:68px;
+  height:68px;
+  margin:0 auto 24px;
+  display:grid;
+  place-items:center;
+  border:6px solid var(--surface);
+  border-radius:50%;
+  color:var(--white);
+  background:var(--navy);
+  box-shadow:0 0 0 2px var(--navy);
+  font-size:16px;
+  font-weight:800;
+}
+
+.bk-process__step h3{
+  color:var(--navy);
+  font-size:17px;
+  font-weight:800;
+}
+
+.bk-process__step p{
+  max-width:22ch;
+  margin:10px auto 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.65;
+}
+
+@media (max-width:1100px){
+  .bk-process__grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:42px 20px;
+  }
+
+  .bk-process__grid::before{
+    display:none;
+  }
+}
+
+@media (max-width:700px){
+  .bk-process__grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .bk-process__step{
+    display:grid;
+    grid-template-columns:64px minmax(0,1fr);
+    gap:18px;
+    align-items:start;
+    padding:0;
+    text-align:left;
+  }
+
+  .bk-process__number{
+    width:58px;
+    height:58px;
+    margin:0;
+    grid-row:1 / span 2;
+    border-width:5px;
+    font-size:14px;
+  }
+
+  .bk-process__step h3{
+    align-self:end;
+  }
+
+  .bk-process__step p{
+    max-width:none;
+    margin:6px 0 0;
+  }
+}
+
+/* ==========================================================
+   MOCKUP TESTIMONIALS
+========================================================== */
+.bk-stories__head .bk-lede{
+  margin-top:18px;
+}
+
+.bk-story{
+  display:flex;
+  min-height:330px;
+  flex-direction:column;
+}
+
+.bk-story__stars{
+  display:flex;
+  gap:4px;
+  color:#f5b301;
+  font-size:14px;
+}
+
+.bk-story blockquote{
+  margin-top:22px;
+  color:var(--navy);
+  font-size:17px;
+  font-weight:700;
+  line-height:1.72;
+}
+
+.bk-story__person{
+  margin-top:auto;
+  padding-top:28px;
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+
+.bk-story__avatar{
+  width:44px;
+  height:44px;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:var(--white);
+  background:linear-gradient(135deg,var(--navy),var(--blue));
+  font-size:12px;
+  font-weight:800;
+}
+
+.bk-story__person strong,
+.bk-story__person small{
+  display:block;
+}
+
+.bk-story__person strong{
+  color:var(--navy);
+  font-size:14px;
+  font-weight:800;
+}
+
+.bk-story__person small{
+  margin-top:3px;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
+
+.bk-testimonial-disclaimer{
+  max-width:850px;
+  margin:22px auto 0;
+  color:#8a94a7;
+  font-size:10px;
+  line-height:1.55;
+  text-align:center;
+}
+
+/* ==========================================================
+   HERO OVERLAY — REDUCED BLUE OPACITY
+========================================================== */
+.bk-hero__media{
+  background:
+    linear-gradient(135deg,rgba(7,26,74,.62),rgba(10,102,255,.14)),
+    #071a4a;
+}
+
+.bk-hero::after{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7,26,74,.72) 0%,
+      rgba(7,26,74,.58) 34%,
+      rgba(7,26,74,.30) 60%,
+      rgba(7,26,74,.08) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(4,13,39,.01),
+      rgba(4,13,39,.20)
+    );
+}
+
+.bk-hero__slide{
+  filter:saturate(.96) contrast(1.03) brightness(.93);
+}
+</style>
+</head>
+<body>
+<div class="bk-utility">
+<div class="bk-container bk-utility__inner">
+<div class="bk-utility__left"><span><i class="fa-solid fa-location-dot"></i> 215–221 Sunshine Rd, Tottenham VIC 3012</span><span><i class="fa-regular fa-clock"></i> Monday–Friday, 7:00am–4:00pm</span></div>
+<div class="bk-utility__right"><a href="tel:1300551127"><i class="fa-solid fa-phone"></i> 1300 551 127</a><a href="tel:0390363330"><i class="fa-solid fa-phone"></i> 03 9036 3330</a><a href="mailto:bookings@bkexpress.com.au"><i class="fa-regular fa-envelope"></i> bookings@bkexpress.com.au</a></div>
+</div>
+</div>
+<nav aria-label="Primary navigation" class="bk-nav">
+<div class="bk-container bk-nav__inner">
+<a aria-label="B and K Express home" class="bk-logo" href="#top">
+<span class="bk-logo__mark">B&amp;K</span>
+<span>B&amp;K <strong>Express</strong></span>
+</a>
+<button aria-controls="bkPrimaryNav" aria-expanded="false" aria-label="Open navigation" class="bk-menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<div aria-label="Mobile and desktop primary navigation" class="bk-nav__links" id="bkPrimaryNav"><a href="#top">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#quote">Contact</a></div>
+</div>
+</nav>
+<main id="top">
+<header class="bk-hero">
+<div aria-hidden="true" class="bk-hero__media"><img alt="Freight containers and logistics operations" class="bk-hero__slide is-active" decoding="async" fetchpriority="high" loading="eager" src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=85&amp;w=2200&amp;auto=format&amp;fit=crop"/><img alt="Heavy freight truck travelling on the road" class="bk-hero__slide" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=85&amp;w=2200&amp;auto=format&amp;fit=crop"/><img alt="Container handling at a freight terminal" class="bk-hero__slide" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1759826350352-c5b0b77729bd?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=70&amp;w=2600"/><img alt="Commercial freight truck on an Australian highway" class="bk-hero__slide" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=2200&amp;auto=format&amp;fit=crop"/></div>
+<div class="bk-container bk-hero__content">
+<span class="bk-eyebrow bk-reveal">Australian freight &amp; logistics</span>
+<h1 class="bk-reveal">Reliable freight solutions built around your business.</h1>
+<p class="bk-reveal">From urgent freight and container transport to warehousing and distribution, B&amp;K Express helps Australian businesses move goods safely, efficiently, and with clear communication from pickup to delivery.</p>
+<div class="bk-hero__actions bk-reveal">
+<a class="bk-btn bk-btn--primary" href="#quote">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+<a class="bk-btn bk-btn--outline-light" href="#services">View Services</a>
+<a class="bk-btn bk-btn--light" href="tel:1300551127"><i class="fa-solid fa-phone"></i> Call Now</a>
+</div>
+<div aria-label="Key service benefits" class="bk-hero__proof bk-reveal">
+<span><i class="fa-solid fa-circle-check"></i> Flexible freight solutions</span>
+<span><i class="fa-solid fa-circle-check"></i> Experienced logistics team</span>
+<span><i class="fa-solid fa-circle-check"></i> Responsive customer support</span>
+</div>
+</div>
+<div aria-label="Hero image slideshow" class="bk-hero__dots"><button aria-label="Show hero image 1" aria-pressed="true" class="bk-hero__dot is-active" data-slide="0" type="button"></button><button aria-label="Show hero image 2" aria-pressed="false" class="bk-hero__dot" data-slide="1" type="button"></button><button aria-label="Show hero image 3" aria-pressed="false" class="bk-hero__dot" data-slide="2" type="button"></button><button aria-label="Show hero image 4" aria-pressed="false" class="bk-hero__dot" data-slide="3" type="button"></button></div></header>
+<section aria-label="Why businesses choose B and K Express" class="bk-trust">
+<div class="bk-container bk-trust__grid">
+<article class="bk-trust__item">
+<span class="bk-trust__icon"><i class="fa-solid fa-award"></i></span>
+<div><h3>Established Experience</h3><p>A long-standing Australian transport business with practical industry knowledge.</p></div>
+</article>
+<article class="bk-trust__item">
+<span class="bk-trust__icon"><i class="fa-solid fa-map-location-dot"></i></span>
+<div><h3>Australia-wide Network</h3><p>Freight coordination across major cities, regional centres, and business routes.</p></div>
+</article>
+<article class="bk-trust__item">
+<span class="bk-trust__icon"><i class="fa-solid fa-boxes-stacked"></i></span>
+<div><h3>Flexible Solutions</h3><p>Transport, warehousing, distribution, and business freight tailored to your needs.</p></div>
+</article>
+<article class="bk-trust__item">
+<span class="bk-trust__icon"><i class="fa-solid fa-headset"></i></span>
+<div><h3>Dedicated Support</h3><p>Clear communication and responsive assistance throughout the freight journey.</p></div>
+</article>
+</div>
+</section>
+<section class="bk-section bk-about" id="about">
+<div class="bk-container bk-about__grid">
+<div class="bk-about__media bk-reveal">
+<div class="bk-about__main-img">
+<img alt="B-double truck travelling on an Australian highway" decoding="async" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+</div>
+<div class="bk-about__small-img">
+<img alt="Organised warehouse operations" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=85&amp;w=700&amp;auto=format&amp;fit=crop"/>
+</div>
+<div class="bk-about__badge">
+<strong>Built for business</strong>
+<span>Dependable freight support from pickup through delivery.</span>
+</div>
+</div>
+<div class="bk-about__content">
+<span class="bk-eyebrow bk-reveal">About B&amp;K Express</span>
+<h2 class="bk-title bk-reveal">An experienced freight partner businesses can rely on.</h2>
+<p class="bk-lede bk-reveal">B&amp;K Express is an established Australian freight and logistics company supporting businesses with practical transport solutions. The focus is simple: move freight safely, communicate clearly, and make the process easy for customers.</p>
+<ul class="bk-about__list bk-reveal">
+<li><i class="fa-solid fa-check"></i> Business freight specialists</li>
+<li><i class="fa-solid fa-check"></i> Safe handling procedures</li>
+<li><i class="fa-solid fa-check"></i> Flexible delivery planning</li>
+<li><i class="fa-solid fa-check"></i> Clear customer communication</li>
+</ul>
+<a class="bk-btn bk-btn--dark bk-reveal" href="#quote">Talk to the Logistics Team</a>
+</div>
+</div>
+</section>
+<section class="bk-section bk-services-showcase" id="services">
+<div class="bk-container">
+<div class="bk-services-showcase__head">
+<div>
+<span class="bk-eyebrow bk-reveal">Freight &amp; logistics services</span>
+<h2 class="bk-title bk-reveal">Six connected services. One reliable logistics partner.</h2>
+</div>
+</div>
+<div aria-label="B and K Express service categories" class="bk-service-panel-groups">
+<div class="bk-service-panels">
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Heavy freight truck travelling on the road" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">01</span>
+<h3>Express freight</h3>
+<div class="bk-service-panel__details">
+<p>Fast, dependable transport for urgent and time-sensitive business deliveries.</p>
+</div>
+<a aria-label="Request an express freight quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Shipping containers and freight terminal operations" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1759826350352-c5b0b77729bd?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">02</span>
+<h3>Container transport</h3>
+<div class="bk-service-panel__details">
+<p>Coordinated container movements from ports, depots, and terminals to business locations.</p>
+</div>
+<a aria-label="Request a container transport quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Warehouse aisle with organised inventory" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1768796373470-199c0f9521bb?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">03</span>
+<h3>Warehousing</h3>
+<div class="bk-service-panel__details">
+<p>Secure storage and organised handling for short-term and ongoing business requirements.</p>
+</div>
+<a aria-label="Request a warehousing quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+</div>
+<div class="bk-service-panels">
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Warehouse and distribution operations" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">04</span>
+<h3>Distribution</h3>
+<div class="bk-service-panel__details">
+<p>Reliable distribution planning for recurring deliveries, retail networks, and multiple destinations.</p>
+</div>
+<a aria-label="Request a distribution quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Commercial truck supporting business freight" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">05</span>
+<h3>Business freight</h3>
+<div class="bk-service-panel__details">
+<p>Consistent freight support for businesses requiring regular pickup, transport, and delivery.</p>
+</div>
+<a aria-label="Request a business freight quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+<article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Cargo containers and custom logistics planning" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">06</span>
+<h3>Custom logistics</h3>
+<div class="bk-service-panel__details">
+<p>Flexible planning for unusual, oversized, recurring, or operationally complex freight.</p>
+</div>
+<a aria-label="Request a custom logistics quote" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section class="bk-section bk-industries-overlap" id="industries">
+<div class="bk-container">
+<div class="bk-industries-overlap__stage">
+<div class="bk-industries-overlap__media bk-reveal">
+<img alt="Warehouse operations and organised logistics storage" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1768796373470-199c0f9521bb?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=70&amp;w=2200"/>
+</div>
+<article class="bk-industries-overlap__card bk-reveal">
+<div class="bk-industries-overlap__intro">
+<span class="bk-industries-overlap__eyebrow">Industries served</span>
+<h2>Industry Logistics Services</h2>
+<p class="bk-industries-overlap__subtitle">Business Only</p>
+<p class="bk-industries-overlap__description">
+            Discover how B&amp;K Express can support your business with dependable freight,
+            warehousing, distribution, and tailored logistics solutions.
+          </p>
+</div>
+<div class="bk-industries-overlap__solutions">
+<h3>Industries Available</h3>
+<div class="bk-industries-overlap__grid">
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-store"></i></span>
+<strong>Retail</strong>
+</div>
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-industry"></i></span>
+<strong>Manufacturing</strong>
+</div>
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-helmet-safety"></i></span>
+<strong>Construction</strong>
+</div>
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-heart-pulse"></i></span>
+<strong>Healthcare</strong>
+</div>
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-cart-shopping"></i></span>
+<strong>E-commerce</strong>
+</div>
+<div class="bk-industries-overlap__item">
+<span><i class="fa-solid fa-plus"></i></span>
+<strong>And more!</strong>
+</div>
+</div>
+</div>
+<div class="bk-industries-overlap__footer">
+<a class="bk-btn bk-btn--primary" href="#quote">
+            Explore Industry Solutions
+          </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="bk-section bk-why">
+<div class="bk-container bk-why__grid">
+<div>
+<span class="bk-eyebrow bk-reveal">Why choose B&amp;K Express</span>
+<h2 class="bk-title bk-reveal">A logistics partner that keeps the process clear.</h2>
+<p class="bk-lede bk-reveal">Customers need more than a truck. They need dependable planning, safe handling, responsive communication, and confidence that someone is managing the details.</p>
+</div>
+<div class="bk-why__features">
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-bolt"></i><h3>Fast Response Times</h3><p>Prompt quoting and practical answers when freight needs to move.</p></article>
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-user-shield"></i><h3>Dedicated Support</h3><p>Speak with people who understand the job and keep you informed.</p></article>
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-shield-halved"></i><h3>Safe Handling</h3><p>Careful freight management supported by safety-focused processes.</p></article>
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-arrows-left-right-to-line"></i><h3>Flexible Planning</h3><p>Solutions adapted to timing, volume, handling, and delivery requirements.</p></article>
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-comments"></i><h3>Clear Communication</h3><p>Practical updates without unnecessary complexity or uncertainty.</p></article>
+<article class="bk-why__feature bk-reveal"><i class="fa-solid fa-dollar-sign"></i><h3>Competitive Solutions</h3><p>Transport planning focused on efficiency and commercial value.</p></article>
+</div>
+</div>
+</section>
+<section class="bk-section bk-section--soft" id="process">
+<div class="bk-container">
+<div class="bk-process__head">
+<span class="bk-eyebrow bk-reveal">How it works</span>
+<h2 class="bk-title bk-title--center bk-reveal">A straightforward freight process from quote to delivery.</h2>
+</div>
+<div class="bk-process__grid">
+<article class="bk-process__step bk-reveal">
+<div class="bk-process__number">01</div>
+<h3>Request a Quote</h3>
+<p>Share pickup, destination, freight type, timing, and handling details.</p>
+</article>
+<article class="bk-process__step bk-reveal">
+<div class="bk-process__number">02</div>
+<h3>Plan the Freight</h3>
+<p>The team confirms the appropriate vehicle, route, timing, and requirements.</p>
+</article>
+<article class="bk-process__step bk-reveal">
+<div class="bk-process__number">03</div>
+<h3>Pickup</h3>
+<p>Your freight is collected according to the agreed schedule and instructions.</p>
+</article>
+<article class="bk-process__step bk-reveal">
+<div class="bk-process__number">04</div>
+<h3>Safe Transport</h3>
+<p>The load is managed carefully with communication throughout the journey.</p>
+</article>
+<article class="bk-process__step bk-reveal">
+<div class="bk-process__number">05</div>
+<h3>Delivery</h3>
+<p>Your freight arrives at the destination with completion confirmed.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="bk-section" id="fleet">
+<div class="bk-container bk-fleet__grid">
+<div class="bk-fleet__media bk-reveal">
+<figure><img alt="Heavy freight truck on the road" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=1100&amp;auto=format&amp;fit=crop"/></figure>
+<figure><img alt="Commercial transport vehicle" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=85&amp;w=700&amp;auto=format&amp;fit=crop"/></figure>
+<figure><img alt="Container handling and freight transport at a logistics terminal" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1759826350352-c5b0b77729bd?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"/></figure>
+</div>
+<div class="bk-fleet__content">
+<span class="bk-eyebrow bk-reveal">Fleet &amp; operations</span>
+<h2 class="bk-title bk-reveal">The equipment, people, and planning behind every movement.</h2>
+<p class="bk-lede bk-reveal">Fleet imagery gives prospective customers a clearer sense of operational capability. Replace the sample photography with authentic B&amp;K Express vehicles, drivers, warehouse facilities, and loading operations before launch.</p>
+<ul class="bk-fleet__list">
+<li class="bk-reveal"><i class="fa-solid fa-truck"></i><div><strong>Fit-for-purpose vehicles</strong><span>Matched to the freight, route, access, and handling requirements.</span></div></li>
+<li class="bk-reveal"><i class="fa-solid fa-screwdriver-wrench"></i><div><strong>Maintenance-focused operations</strong><span>Reliable equipment supported by planned servicing and checks.</span></div></li>
+<li class="bk-reveal"><i class="fa-solid fa-user-tie"></i><div><strong>Experienced operators</strong><span>Professional drivers and logistics staff managing the work.</span></div></li>
+</ul>
+<a class="bk-btn bk-btn--dark bk-reveal" href="#quote">Discuss Your Freight</a>
+</div>
+</div>
+</section>
+<section class="bk-section bk-coverage">
+<div class="bk-container bk-coverage__grid">
+<div>
+<span class="bk-eyebrow bk-reveal">Service coverage</span>
+<h2 class="bk-title bk-reveal">Freight coordination across Australia.</h2>
+<p class="bk-lede bk-reveal">Use this section to show the primary cities, regional corridors, depots, and partner network B&amp;K Express services. Final coverage claims should be confirmed before publication.</p>
+<div class="bk-coverage__cities bk-reveal">
+<span>Melbourne</span><span>Sydney</span><span>Brisbane</span><span>Adelaide</span><span>Perth</span><span>Canberra</span><span>Regional Routes</span>
+</div>
+</div>
+<div aria-label="Illustrative Australia service coverage map" class="bk-map bk-reveal">
+<svg aria-labelledby="bkMapTitle bkMapDesc" role="img" viewbox="0 0 820 560">
+<title id="bkMapTitle">Illustrative Australia freight network</title>
+<desc id="bkMapDesc">A stylised map of Australia showing major service cities, with Perth correctly positioned on the south-west coast.</desc>
+<defs>
+<lineargradient id="bkMapFill" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0" stop-color="rgba(255,255,255,.10)"></stop>
+<stop offset="1" stop-color="rgba(255,255,255,.035)"></stop>
+</lineargradient>
+<filter height="180%" id="bkMapGlow" width="180%" x="-40%" y="-40%">
+<fegaussianblur result="blur" stddeviation="5"></fegaussianblur>
+<femerge>
+<femergenode in="blur"></femergenode>
+<femergenode in="SourceGraphic"></femergenode>
+</femerge>
+</filter>
+</defs>
+<!-- More accurate, still simplified mainland silhouette -->
+<path class="bk-map__land" d="M128 171
+         L168 114
+         L250 84
+         L330 91
+         L398 64
+         L490 83
+         L574 130
+         L638 195
+         L676 278
+         L650 351
+         L604 414
+         L536 443
+         L486 507
+         L410 492
+         L351 456
+         L290 469
+         L218 438
+         L168 390
+         L126 331
+         L90 264
+         L101 211
+         Z" fill="url(#bkMapFill)" stroke="rgba(255,255,255,.34)" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Tasmania -->
+<path class="bk-map__land" d="M492 507 L526 524 L514 548 L481 538 Z" fill="url(#bkMapFill)" stroke="rgba(255,255,255,.34)" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Freight routes -->
+<g class="bk-map__routes" fill="none" stroke="rgba(114,216,255,.48)" stroke-dasharray="8 9" stroke-width="2.5">
+<path d="M487 451 C520 412, 563 390, 601 352"></path>
+<path d="M487 451 C449 430, 410 416, 368 421"></path>
+<path d="M487 451 C381 470, 265 458, 190 405"></path>
+<path d="M601 352 C621 316, 633 284, 641 245"></path>
+<path d="M601 352 C577 362, 555 369, 536 374"></path>
+</g>
+<!-- Melbourne -->
+<g class="bk-map__city" transform="translate(487 451)">
+<circle class="bk-map__pulse" r="16"></circle>
+<circle r="7"></circle>
+<text x="16" y="5">Melbourne</text>
+</g>
+<!-- Sydney -->
+<g class="bk-map__city" transform="translate(601 352)">
+<circle class="bk-map__pulse" r="16"></circle>
+<circle r="7"></circle>
+<text x="16" y="5">Sydney</text>
+</g>
+<!-- Brisbane -->
+<g class="bk-map__city" transform="translate(641 245)">
+<circle class="bk-map__pulse" r="16"></circle>
+<circle r="7"></circle>
+<text x="16" y="5">Brisbane</text>
+</g>
+<!-- Canberra -->
+<g class="bk-map__city bk-map__city--small" transform="translate(536 374)">
+<circle class="bk-map__pulse" r="12"></circle>
+<circle r="5"></circle>
+<text x="13" y="4">Canberra</text>
+</g>
+<!-- Adelaide -->
+<g class="bk-map__city" transform="translate(368 421)">
+<circle class="bk-map__pulse" r="16"></circle>
+<circle r="7"></circle>
+<text x="16" y="5">Adelaide</text>
+</g>
+<!-- Perth: positioned inland on the south-west coast -->
+<g class="bk-map__city" transform="translate(190 405)">
+<circle class="bk-map__pulse" r="16"></circle>
+<circle r="7"></circle>
+<text text-anchor="end" x="-14" y="-16">Perth</text>
+</g>
+</svg>
+<div class="bk-map__legend">
+<span><i></i> Major service city</span>
+<span class="bk-map__legend-route"><i></i> Illustrative freight route</span>
+</div>
+<span class="bk-map__note">Illustrative coverage only — confirm final service locations before launch.</span>
+</div>
+</div>
+</section>
+<section class="bk-section bk-stories" id="testimonials">
+<div class="bk-container">
+<div class="bk-stories__head">
+<span class="bk-eyebrow bk-reveal">What customers value</span>
+<h2 class="bk-title bk-title--center bk-reveal">Trusted freight support for growing Australian businesses.</h2>
+<p class="bk-lede bk-lede--center bk-reveal">
+        Reliable communication, careful handling, and dependable delivery from pickup through to completion.
+      </p>
+</div>
+<div class="bk-stories__grid">
+<article class="bk-story bk-reveal">
+<div aria-label="Five star mock testimonial" class="bk-story__stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<blockquote>
+          “B&amp;K Express made the whole process simple. The team kept us updated, collected on time, and delivered exactly when promised.”
+        </blockquote>
+<div class="bk-story__person">
+<span class="bk-story__avatar">JM</span>
+<span>
+<strong>James M.</strong>
+<small>Operations Manager, Metro Supply Co.</small>
+</span>
+</div>
+</article>
+<article class="bk-story bk-reveal">
+<div aria-label="Five star mock testimonial" class="bk-story__stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<blockquote>
+          “We needed a dependable freight partner for regular business deliveries. Their communication and attention to detail gave us real confidence.”
+        </blockquote>
+<div class="bk-story__person">
+<span class="bk-story__avatar">SL</span>
+<span>
+<strong>Sarah L.</strong>
+<small>Director, Westline Retail Group</small>
+</span>
+</div>
+</article>
+<article class="bk-story bk-reveal">
+<div aria-label="Five star mock testimonial" class="bk-story__stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<blockquote>
+          “From pickup through to final delivery, everything was handled professionally. We especially appreciated the clear updates along the way.”
+        </blockquote>
+<div class="bk-story__person">
+<span class="bk-story__avatar">DK</span>
+<span>
+<strong>Daniel K.</strong>
+<small>Warehouse Coordinator, Southern Trade Solutions</small>
+</span>
+</div>
+</article>
+</div>
+<p class="bk-testimonial-disclaimer bk-reveal">
+      Mockup testimonials only. Names, companies, and comments are fictional examples for design presentation and must be replaced with verified customer feedback before publication.
+    </p>
+</div>
+</section>
+<section class="bk-section" id="faq">
+<div class="bk-container">
+<div class="bk-faq__head">
+<span class="bk-eyebrow bk-reveal">Frequently asked questions</span>
+<h2 class="bk-title bk-title--center bk-reveal">Answers before you book.</h2>
+</div>
+<div class="bk-faq__grid">
+<article class="bk-faq__item">
+<button aria-expanded="false" class="bk-faq__question" type="button"><span>What information do I need for a freight quote?</span><i class="fa-solid fa-plus"></i></button>
+<div class="bk-faq__answer"><p>Provide the pickup and delivery locations, freight type, dimensions, weight, quantity, preferred timing, access conditions, and any special handling requirements.</p></div>
+</article>
+<article class="bk-faq__item">
+<button aria-expanded="false" class="bk-faq__question" type="button"><span>Can B&amp;K Express handle recurring business freight?</span><i class="fa-solid fa-plus"></i></button>
+<div class="bk-faq__answer"><p>Yes. Recurring transport and distribution schedules can be planned around your operational requirements. Final service availability should be confirmed with the team.</p></div>
+</article>
+<article class="bk-faq__item">
+<button aria-expanded="false" class="bk-faq__question" type="button"><span>Do you provide warehousing and distribution?</span><i class="fa-solid fa-plus"></i></button>
+<div class="bk-faq__answer"><p>The site positions B&amp;K Express as offering warehousing and distribution support. Add confirmed facility locations, capacity, inventory services, and operating details before publishing.</p></div>
+</article>
+<article class="bk-faq__item">
+<button aria-expanded="false" class="bk-faq__question" type="button"><span>How quickly will the team respond to my enquiry?</span><i class="fa-solid fa-plus"></i></button>
+<div class="bk-faq__answer"><p>Add a confirmed response-time commitment here, such as “within one business day,” once the business has approved the service standard.</p></div>
+</article>
+<article class="bk-faq__item">
+<button aria-expanded="false" class="bk-faq__question" type="button"><span>Can you move unusual or complex freight?</span><i class="fa-solid fa-plus"></i></button>
+<div class="bk-faq__answer"><p>Use the quote form to share the freight specifications, site access, loading requirements, and timing. The logistics team can then confirm the appropriate solution.</p></div>
+</article>
+</div>
+</div>
+</section>
+<section class="bk-quote-trigger-section" id="quote">
+<div class="bk-container bk-quote-trigger-section__inner">
+<div>
+<span class="bk-eyebrow bk-reveal">Request a quote</span>
+<h2 class="bk-reveal">Need help moving your freight?</h2>
+<p class="bk-reveal">Tell us what needs to move and the B&amp;K Express team will review your requirements and recommend the right transport solution.</p>
+</div>
+<button class="bk-btn bk-btn--primary bk-open-quote-modal bk-reveal" type="button">
+      Request a Quote
+      <i class="fa-solid fa-arrow-right"></i>
+</button>
+<div aria-label="B and K Express contact information" class="bk-quote-contact-strip bk-reveal">
+<div class="bk-quote-contact-strip__item">
+<i class="fa-solid fa-phone"></i>
+<span>
+<strong>Call the team</strong>
+<a href="tel:1300551127"><small>1300 551 127</small></a>
+<a href="tel:0390363330"><small>03 9036 3330</small></a>
+</span>
+</div>
+<a class="bk-quote-contact-strip__item" href="mailto:bookings@bkexpress.com.au">
+<i class="fa-regular fa-envelope"></i>
+<span>
+<strong>Email enquiries</strong>
+<small>bookings@bkexpress.com.au</small>
+</span>
+</a>
+<div class="bk-quote-contact-strip__item">
+<i class="fa-solid fa-location-dot"></i>
+<span>
+<strong>Address</strong>
+<small>215–221 Sunshine Rd, Tottenham VIC 3012</small>
+</span>
+</div>
+<div class="bk-quote-contact-strip__item">
+<i class="fa-regular fa-clock"></i>
+<span>
+<strong>Business hours</strong>
+<small>Monday–Friday, 7:00am–4:00pm</small>
+</span>
+</div>
+</div></div>
+</section>
+</main>
+<div aria-hidden="true" class="bk-modal" id="bkQuoteModal">
+<div class="bk-modal__backdrop" data-close-quote-modal=""></div>
+<div aria-labelledby="bkQuoteModalTitle" aria-modal="true" class="bk-modal__dialog" role="dialog">
+<button aria-label="Close quote form" class="bk-modal__close" data-close-quote-modal="" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<div class="bk-modal__intro">
+<span class="bk-eyebrow">Request a quote</span>
+<h2 id="bkQuoteModalTitle">Tell us what needs to move.</h2>
+<p>Share the main freight details and the B&amp;K Express team can review the job, confirm what is required, and recommend the right solution.</p>
+</div>
+<div class="bk-modal__form-wrap">
+<form class="bk-quote__form" id="bkQuoteForm" novalidate="">
+<div class="bk-form-grid">
+<div class="bk-field">
+<label for="bkName">Full name *</label>
+<input autocomplete="name" id="bkName" name="name" required="" type="text"/>
+</div>
+<div class="bk-field">
+<label for="bkCompany">Company</label>
+<input autocomplete="organization" id="bkCompany" name="company" type="text"/>
+</div>
+<div class="bk-field">
+<label for="bkEmail">Email *</label>
+<input autocomplete="email" id="bkEmail" name="email" required="" type="email"/>
+</div>
+<div class="bk-field">
+<label for="bkPhone">Phone *</label>
+<input autocomplete="tel" id="bkPhone" name="phone" required="" type="tel"/>
+</div>
+<div class="bk-field">
+<label for="bkPickup">Pickup location *</label>
+<input id="bkPickup" name="pickup" required="" type="text"/>
+</div>
+<div class="bk-field">
+<label for="bkDestination">Destination *</label>
+<input id="bkDestination" name="destination" required="" type="text"/>
+</div>
+<div class="bk-field">
+<label for="bkFreightType">Freight type *</label>
+<select id="bkFreightType" name="freight_type" required="">
+<option value="">Select freight type</option>
+<option>Express freight</option>
+<option>Container transport</option>
+<option>Warehousing</option>
+<option>Distribution</option>
+<option>Business freight</option>
+<option>Custom logistics</option>
+</select>
+</div>
+<div class="bk-field">
+<label for="bkPickupDate">Preferred pickup date</label>
+<input id="bkPickupDate" name="pickup_date" type="date"/>
+</div>
+<div class="bk-field bk-field--full">
+<label for="bkDetails">Freight details *</label>
+<textarea id="bkDetails" name="details" placeholder="Include the freight type, dimensions, weight, quantity, access conditions, timing, and any special handling requirements." required=""></textarea>
+</div>
+</div>
+<div class="bk-modal__form-footer">
+<p class="bk-form-note">Connect this form to the business email or CRM workflow before launch.</p>
+<button class="bk-btn bk-btn--primary" type="submit">Submit Quote Request</button>
+</div>
+<p aria-live="polite" class="bk-form-status" id="bkQuoteStatus"></p>
+</form>
+</div>
+</div>
+</div><footer class="bk-footer">
+<div class="bk-container">
+<div class="bk-footer__grid">
+<div class="bk-footer__brand">
+<a class="bk-logo" href="#top"><span class="bk-logo__mark">B&amp;K</span><span>B&amp;K <strong>Express</strong></span></a>
+<p>Reliable freight, transport, warehousing, and distribution solutions for Australian businesses.</p>
+<div class="bk-footer__social">
+<a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+<a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div>
+<h3>Services</h3>
+<ul>
+<li><a href="#services">Express Freight</a></li>
+<li><a href="#services">Container Transport</a></li>
+<li><a href="#services">Warehousing</a></li>
+<li><a href="#services">Distribution</a></li>
+</ul>
+</div>
+<div>
+<h3>Company</h3>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#industries">Industries</a></li>
+<li><a href="#fleet">Fleet</a></li>
+<li><a href="#faq">FAQs</a></li>
+<li><a href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h3>Contact</h3>
+<ul><li><a href="tel:1300551127"><i class="fa-solid fa-phone"></i> 1300 551 127</a></li><li><a href="tel:0390363330"><i class="fa-solid fa-phone"></i> 03 9036 3330</a></li><li><a href="mailto:bookings@bkexpress.com.au"><i class="fa-regular fa-envelope"></i> bookings@bkexpress.com.au</a></li><li><span><i class="fa-solid fa-location-dot"></i> 215–221 Sunshine Rd, Tottenham VIC 3012</span></li><li><span><i class="fa-regular fa-clock"></i> Mon–Fri, 7:00am–4:00pm</span></li></ul>
+</div>
+</div>
+<div class="bk-footer__bottom">
+<p>© <span id="bkYear">2026</span> B&amp;K Express. All rights reserved.</p>
+<p><a href="#">Privacy Policy</a>  ·  <a href="#">Terms</a></p>
+</div>
+</div>
+</footer>
+<a class="bk-btn bk-btn--primary bk-floating-quote" href="#quote"><i class="fa-regular fa-file-lines"></i> Get a Quote</a>
+<div aria-label="Quick actions" class="bk-mobile-actions">
+<a href="tel:1300551127"><i class="fa-solid fa-phone"></i> Call</a>
+<a href="#quote"><i class="fa-regular fa-file-lines"></i> Get Quote</a>
+</div>
+<script>
+(() => {
+  const menuButton = document.querySelector('.bk-menu-toggle');
+  const menu = document.getElementById('bkPrimaryNav');
+
+  const setMenu = (open) => {
+    if (!menuButton || !menu) return;
+    menuButton.classList.toggle('is-open', open);
+    menu.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  };
+
+  menuButton?.addEventListener('click', () => {
+    setMenu(!menu.classList.contains('is-open'));
+  });
+
+  menu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      setMenu(false);
+      window.setTimeout(() => {
+        const target = document.querySelector(link.getAttribute('href'));
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 40);
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenu(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) setMenu(false);
+  });
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealElements = document.querySelectorAll('.bk-reveal');
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    revealElements.forEach((element) => element.classList.add('is-visible'));
+  } else {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+  }
+
+  const navLinks = Array.from(document.querySelectorAll('.bk-nav__links a[href^="#"]'));
+  const navSections = navLinks
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && navSections.length) {
+    const navObserver = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (!visible) return;
+
+      navLinks.forEach((link) => {
+        const active = link.getAttribute('href') === `#${visible.target.id}`;
+        if (active) link.setAttribute('aria-current', 'true');
+        else link.removeAttribute('aria-current');
+      });
+    }, {
+      rootMargin:'-28% 0px -58% 0px',
+      threshold:[0.01,0.2,0.4]
+    });
+
+    navSections.forEach((section) => navObserver.observe(section));
+  }
+
+  document.querySelectorAll('.bk-faq__item').forEach((item) => {
+    const question = item.querySelector('.bk-faq__question');
+
+    question?.addEventListener('click', () => {
+      const willOpen = !item.classList.contains('is-open');
+
+      document.querySelectorAll('.bk-faq__item.is-open').forEach((openItem) => {
+        openItem.classList.remove('is-open');
+        openItem.querySelector('.bk-faq__question')?.setAttribute('aria-expanded', 'false');
+      });
+
+      item.classList.toggle('is-open', willOpen);
+      question.setAttribute('aria-expanded', String(willOpen));
+    });
+  });
+
+  const slides = Array.from(document.querySelectorAll('.bk-hero__slide'));
+  const dots = Array.from(document.querySelectorAll('.bk-hero__dot'));
+  let currentSlide = 0;
+  let slideTimer = null;
+
+  const showSlide = (index) => {
+    if (!slides.length) return;
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === currentSlide);
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      const active = dotIndex === currentSlide;
+      dot.classList.toggle('is-active', active);
+      dot.setAttribute('aria-pressed', String(active));
+    });
+  };
+
+  const startSlideshow = () => {
+    if (reducedMotion || slides.length < 2) return;
+    window.clearInterval(slideTimer);
+    slideTimer = window.setInterval(() => showSlide(currentSlide + 1), 5200);
+  };
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      startSlideshow();
+    });
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) window.clearInterval(slideTimer);
+    else startSlideshow();
+  });
+
+  showSlide(0);
+  startSlideshow();
+
+  const modal = document.getElementById('bkQuoteModal');
+  const dialog = modal?.querySelector('.bk-modal__dialog');
+  const openButtons = Array.from(document.querySelectorAll('.bk-open-quote-modal, a[href="#quote"]'));
+  const closeButtons = Array.from(document.querySelectorAll('[data-close-quote-modal]'));
+  let lastFocusedElement = null;
+
+  const focusableSelector = [
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
+    '[tabindex]:not([tabindex="-1"])'
+  ].join(',');
+
+  const openModal = () => {
+    if (!modal) return;
+    lastFocusedElement = document.activeElement;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('bk-modal-open');
+    window.setTimeout(() => modal.querySelector('#bkName')?.focus(),80);
+  };
+
+  const closeModal = () => {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('bk-modal-open');
+    lastFocusedElement?.focus?.();
+  };
+
+  openButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      openModal();
+    });
+  });
+
+  closeButtons.forEach((button) => button.addEventListener('click', closeModal));
+
+  document.addEventListener('keydown', (event) => {
+    if (!modal?.classList.contains('is-open')) return;
+
+    if (event.key === 'Escape') {
+      closeModal();
+      return;
+    }
+
+    if (event.key !== 'Tab' || !dialog) return;
+
+    const focusable = Array.from(dialog.querySelectorAll(focusableSelector))
+      .filter((element) => element.offsetParent !== null);
+
+    if (!focusable.length) return;
+
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
+
+  const quoteForm = document.getElementById('bkQuoteForm');
+  const quoteStatus = document.getElementById('bkQuoteStatus');
+
+  quoteForm?.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!quoteForm.checkValidity()) {
+      quoteStatus.textContent = 'Please complete the required fields.';
+      quoteStatus.style.color = '#bf3c3c';
+      quoteForm.reportValidity();
+      return;
+    }
+
+    const submitButton = quoteForm.querySelector('button[type="submit"]');
+    if (!submitButton) return;
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending…';
+    quoteStatus.textContent = '';
+
+    window.setTimeout(() => {
+      submitButton.textContent = 'Request Received';
+      quoteStatus.style.color = 'var(--success)';
+      quoteStatus.textContent = 'Thank you. This demo form is ready to connect to email or a CRM.';
+    },700);
+  });
+
+  document.addEventListener('error', (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement) || image.dataset.fallbackApplied === 'true') return;
+
+    image.dataset.fallbackApplied = 'true';
+    image.alt = image.alt || 'B&K Express freight and logistics';
+    image.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">' +
+      '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#071a4a"/><stop offset="1" stop-color="#0a66ff"/>' +
+      '</linearGradient></defs>' +
+      '<rect width="1200" height="700" fill="url(#bg)"/>' +
+      '<g fill="none" stroke="rgba(255,255,255,.22)" stroke-width="14">' +
+      '<rect x="220" y="260" width="540" height="230" rx="12"/>' +
+      '<path d="M760 350h125l95 92v48H760z"/>' +
+      '<circle cx="360" cy="540" r="55"/><circle cx="840" cy="540" r="55"/>' +
+      '</g>' +
+      '<text x="600" y="155" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">B&amp;K EXPRESS</text>' +
+      '<text x="600" y="210" text-anchor="middle" fill="rgba(255,255,255,.76)" font-family="Arial,sans-serif" font-size="25">Freight &amp; Logistics</text>' +
+      '</svg>'
+    );
+  }, true);
+
+  const year = document.getElementById('bkYear');
+  if (year) year.textContent = String(new Date().getFullYear());
+})();
+</script></body>
+</html>
