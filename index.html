@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="#071a4a" name="theme-color"/>
 <title>B&amp;K Express | Freight, Transport &amp; Logistics Australia</title>
-<meta content="B&amp;K Express provides reliable freight, transport, warehousing, distribution, and logistics solutions for Australian businesses. Request a quote or speak with the team." name="description"/>
+<meta content="B&amp;K Express provides 20ft and 40ft wharf container movements, side-loader and trailer deliveries, B-Double and Super A transport, VGM weighing, container storage, customs-approved FCL handling, and fumigation services in Victoria." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://images.unsplash.com" rel="preconnect"/>
@@ -18,7 +18,7 @@
   "@type": "LocalBusiness",
   "name": "B&K Express",
   "url": "https://bkexpress.com.au/",
-  "description": "Australian freight, transport, warehousing, distribution, and logistics solutions for businesses.",
+  "description": "Container transport and logistics services including wharf movements, side-loader and trailer deliveries, heavy combination transport, VGM weighing, container storage, customs-approved FCL handling, and fumigation.",
   "telephone": [
     "1300 551 127",
     "03 9036 3330"
@@ -32,7 +32,109 @@
     "postalCode": "3012",
     "addressCountry": "AU"
   },
-  "openingHours": "Mo-Fr 07:00-16:00"
+  "openingHours": "Mo-Fr 07:00-16:00",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "B&K Express Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "20ft & 40ft Wharf Movements",
+          "description": "Container movements to and from the wharf for both 20ft and 40ft FCL containers."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Side-loader Deliveries",
+          "description": "Dedicated side-loader delivery services for efficient container placement at customer sites."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Skel Trailer Deliveries",
+          "description": "Container transport using skeletal trailers for standard wharf and site delivery requirements."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drop Trailer Deliveries",
+          "description": "Drop trailer delivery solutions where the trailer or container needs to remain on site."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "B-Double Capabilities",
+          "description": "B-Double transport capability for larger container movements and higher-volume freight requirements."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Super A Capabilities",
+          "description": "Super A combination capability for specialised heavy vehicle and container transport operations."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "20ft Tray Truck / Sideloader",
+          "description": "A 20ft tray truck and sideloader option for smaller sites and difficult-to-access delivery areas."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VGM Weighing Equipment",
+          "description": "Verified Gross Mass weighing support for containers requiring accurate compliant weight confirmation."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Container Storage",
+          "description": "Secure short-term or ongoing container storage to support freight scheduling and site requirements."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customs-Approved FCL Handling",
+          "description": "Customs-approved handling for FCL containers under Bond Code GL40P."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "FCL Container Fumigation",
+          "description": "Fumigation services for FCL containers, including Class 4.6 requirements."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sign on Glass Capabilities",
+          "description": "Sign on Glass capability to support secure digital proof of delivery and transport documentation."
+        }
+      }
+    ]
+  }
 }
 </script>
 <style>
@@ -1429,8 +1531,10 @@ textarea:focus-visible{
 
 .bk-quote-contact-strip{
   grid-column:1 / -1;
+  width:100%;
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:stretch;
   border-block:1px solid rgba(255,255,255,.2);
 }
 
@@ -1961,20 +2065,7 @@ textarea:focus-visible{
     grid-template-columns:1fr;
   }
 
-  .bk-quote-contact-strip{
-    grid-template-columns:1fr;
-  }
-
-  .bk-quote-contact-strip__item{
-    min-height:auto;
-    border-right:0;
-    border-bottom:1px solid rgba(255,255,255,.18);
-  }
-
-  .bk-quote-contact-strip__item:last-child{
-    border-bottom:0;
-  }
-
+  
   .bk-floating-quote{
     display:none;
   }
@@ -2625,6 +2716,133 @@ textarea:focus-visible{
 .bk-hero__slide{
   filter:saturate(.96) contrast(1.03) brightness(.93);
 }
+
+
+/* ==========================================================
+   CONTACT STRIP — FIXED RESPONSIVE GRID
+========================================================== */
+.bk-quote-contact-strip__item{
+  min-width:0;
+  height:100%;
+}
+
+.bk-quote-contact-strip__item span{
+  min-width:0;
+}
+
+.bk-quote-contact-strip__item small{
+  overflow-wrap:anywhere;
+}
+
+.bk-quote-contact-strip__item span > a{
+  display:block;
+  color:inherit;
+}
+
+.bk-quote-contact-strip__item span > a:hover small{
+  color:#ffffff;
+}
+
+@media (max-width:820px){
+  .bk-quote-contact-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .bk-quote-contact-strip__item{
+    min-height:110px;
+    border-right:1px solid rgba(255,255,255,.18);
+    border-bottom:1px solid rgba(255,255,255,.18);
+  }
+
+  .bk-quote-contact-strip__item:nth-child(2n){
+    border-right:0;
+  }
+
+  .bk-quote-contact-strip__item:nth-last-child(-n+2){
+    border-bottom:0;
+  }
+}
+
+@media (max-width:560px){
+  .bk-quote-contact-strip{
+    grid-template-columns:1fr;
+  }
+
+  .bk-quote-contact-strip__item,
+  .bk-quote-contact-strip__item:nth-child(2n){
+    min-height:auto;
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.18);
+  }
+
+  .bk-quote-contact-strip__item:nth-last-child(-n+2){
+    border-bottom:1px solid rgba(255,255,255,.18);
+  }
+
+  .bk-quote-contact-strip__item:last-child{
+    border-bottom:0;
+  }
+}
+
+/* ==========================================================
+   UPDATED ACTUAL SERVICE CONTENT
+========================================================== */
+.bk-service-panel h3{
+  max-width:12ch;
+  font-size:clamp(27px,2.45vw,40px);
+}
+
+.bk-service-panel__details{
+  max-width:420px;
+}
+
+.bk-service-panel:hover .bk-service-panel__details,
+.bk-service-panel:focus-within .bk-service-panel__details,
+.bk-service-panel:focus .bk-service-panel__details{
+  max-height:210px;
+}
+
+@media (max-width:1000px){
+  .bk-service-panel__details{
+    max-height:210px;
+  }
+}
+
+@media (max-width:700px){
+  .bk-service-panel h3{
+    font-size:33px;
+  }
+}
+
+/* ==========================================================
+   INDIVIDUAL SERVICE PANELS
+========================================================== */
+#services .bk-service-panel h3{
+  max-width:13ch;
+  font-size:clamp(25px,2.15vw,36px);
+}
+
+#services .bk-service-panel__details{
+  max-width:430px;
+}
+
+#services .bk-service-panel:hover .bk-service-panel__details,
+#services .bk-service-panel:focus-within .bk-service-panel__details,
+#services .bk-service-panel:focus .bk-service-panel__details{
+  max-height:220px;
+}
+
+@media (max-width:1000px){
+  #services .bk-service-panel__details{
+    max-height:220px;
+  }
+}
+
+@media (max-width:700px){
+  #services .bk-service-panel h3{
+    font-size:31px;
+  }
+}
 </style>
 </head>
 <body>
@@ -2717,100 +2935,168 @@ textarea:focus-visible{
 <div class="bk-container">
 <div class="bk-services-showcase__head">
 <div>
-<span class="bk-eyebrow bk-reveal">Freight &amp; logistics services</span>
-<h2 class="bk-title bk-reveal">Six connected services. One reliable logistics partner.</h2>
+<span class="bk-eyebrow bk-reveal">Our list of services</span>
+<h2 class="bk-title bk-reveal">Complete container transport and handling services.</h2>
 </div>
+<p class="bk-lede bk-reveal">Every service is shown separately below so customers can clearly identify the exact transport, handling, storage, weighing, or compliance support they need.</p>
 </div>
-<div aria-label="B and K Express service categories" class="bk-service-panel-groups">
-<div class="bk-service-panels">
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Heavy freight truck travelling on the road" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+<div aria-label="B and K Express services" class="bk-service-panel-groups"><div class="bk-service-panels"><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Shipping containers being moved at a wharf" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">01</span>
-<h3>Express freight</h3>
+<h3>20ft &amp; 40ft Wharf Movements</h3>
 <div class="bk-service-panel__details">
-<p>Fast, dependable transport for urgent and time-sensitive business deliveries.</p>
+<p>Container movements to and from the wharf for both 20ft and 40ft FCL containers.</p>
 </div>
-<a aria-label="Request an express freight quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for 20ft &amp; 40ft Wharf Movements" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Shipping containers and freight terminal operations" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1759826350352-c5b0b77729bd?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"/>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Container side-loader truck" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">02</span>
-<h3>Container transport</h3>
+<h3>Side-loader Deliveries</h3>
 <div class="bk-service-panel__details">
-<p>Coordinated container movements from ports, depots, and terminals to business locations.</p>
+<p>Dedicated side-loader delivery services for efficient container placement at customer sites.</p>
 </div>
-<a aria-label="Request a container transport quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for Side-loader Deliveries" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Warehouse aisle with organised inventory" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1768796373470-199c0f9521bb?auto=format&amp;fit=crop&amp;fm=jpg&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;ixlib=rb-4.1.0&amp;q=60&amp;w=3000"/>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Skeletal freight trailer carrying a container" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">03</span>
-<h3>Warehousing</h3>
+<h3>Skel Trailer Deliveries</h3>
 <div class="bk-service-panel__details">
-<p>Secure storage and organised handling for short-term and ongoing business requirements.</p>
+<p>Container transport using skeletal trailers for standard wharf and site delivery requirements.</p>
 </div>
-<a aria-label="Request a warehousing quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for Skel Trailer Deliveries" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
-</div>
-<div class="bk-service-panels">
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Warehouse and distribution operations" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+</article></div><div class="bk-service-panels"><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Commercial freight trailer delivery" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">04</span>
-<h3>Distribution</h3>
+<h3>Drop Trailer Deliveries</h3>
 <div class="bk-service-panel__details">
-<p>Reliable distribution planning for recurring deliveries, retail networks, and multiple destinations.</p>
+<p>Drop trailer delivery solutions where the trailer or container needs to remain on site.</p>
 </div>
-<a aria-label="Request a distribution quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for Drop Trailer Deliveries" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Commercial truck supporting business freight" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="B-Double freight truck" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">05</span>
-<h3>Business freight</h3>
+<h3>B-Double Capabilities</h3>
 <div class="bk-service-panel__details">
-<p>Consistent freight support for businesses requiring regular pickup, transport, and delivery.</p>
+<p>B-Double transport capability for larger container movements and higher-volume freight requirements.</p>
 </div>
-<a aria-label="Request a business freight quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for B-Double Capabilities" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
-<article class="bk-service-panel bk-reveal" tabindex="0">
-<img alt="Cargo containers and custom logistics planning" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=85&amp;w=1300&amp;auto=format&amp;fit=crop"/>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Heavy combination container truck" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
 <div aria-hidden="true" class="bk-service-panel__shade"></div>
 <div class="bk-service-panel__content">
 <span class="bk-service-panel__number">06</span>
-<h3>Custom logistics</h3>
+<h3>Super A Capabilities</h3>
 <div class="bk-service-panel__details">
-<p>Flexible planning for unusual, oversized, recurring, or operationally complex freight.</p>
+<p>Super A combination capability for specialised heavy vehicle and container transport operations.</p>
 </div>
-<a aria-label="Request a custom logistics quote" class="bk-service-panel__arrow" href="#quote">
+<a aria-label="Request a quote for Super A Capabilities" class="bk-service-panel__arrow" href="#quote">
 <i class="fa-solid fa-arrow-right"></i>
 </a>
 </div>
-</article>
+</article></div><div class="bk-service-panels"><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Smaller commercial truck delivering freight" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">07</span>
+<h3>20ft Tray Truck / Sideloader</h3>
+<div class="bk-service-panel__details">
+<p>A 20ft tray truck and sideloader option for smaller sites and difficult-to-access delivery areas.</p>
 </div>
+<a aria-label="Request a quote for 20ft Tray Truck / Sideloader" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
 </div>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Container weighing and logistics equipment" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">08</span>
+<h3>VGM Weighing Equipment</h3>
+<div class="bk-service-panel__details">
+<p>Verified Gross Mass weighing support for containers requiring accurate compliant weight confirmation.</p>
+</div>
+<a aria-label="Request a quote for VGM Weighing Equipment" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Shipping containers stored at a logistics facility" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">09</span>
+<h3>Container Storage</h3>
+<div class="bk-service-panel__details">
+<p>Secure short-term or ongoing container storage to support freight scheduling and site requirements.</p>
+</div>
+<a aria-label="Request a quote for Container Storage" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article></div><div class="bk-service-panels"><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Customs and container freight handling" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1524522173746-f628baad3644?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">10</span>
+<h3>Customs-Approved FCL Handling</h3>
+<div class="bk-service-panel__details">
+<p>Customs-approved handling for FCL containers under Bond Code GL40P.</p>
+</div>
+<a aria-label="Request a quote for Customs-Approved FCL Handling" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Container inspection and fumigation preparation" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">11</span>
+<h3>FCL Container Fumigation</h3>
+<div class="bk-service-panel__details">
+<p>Fumigation services for FCL containers, including Class 4.6 requirements.</p>
+</div>
+<a aria-label="Request a quote for FCL Container Fumigation" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article><article class="bk-service-panel bk-reveal" tabindex="0">
+<img alt="Digital transport documentation and proof of delivery" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=85&amp;w=1400&amp;auto=format&amp;fit=crop"/>
+<div aria-hidden="true" class="bk-service-panel__shade"></div>
+<div class="bk-service-panel__content">
+<span class="bk-service-panel__number">12</span>
+<h3>Sign on Glass Capabilities</h3>
+<div class="bk-service-panel__details">
+<p>Sign on Glass capability to support secure digital proof of delivery and transport documentation.</p>
+</div>
+<a aria-label="Request a quote for Sign on Glass Capabilities" class="bk-service-panel__arrow" href="#quote">
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</article></div></div>
 </div>
 </section>
 <section class="bk-section bk-industries-overlap" id="industries">
@@ -3231,15 +3517,7 @@ textarea:focus-visible{
 </div>
 <div class="bk-field">
 <label for="bkFreightType">Freight type *</label>
-<select id="bkFreightType" name="freight_type" required="">
-<option value="">Select freight type</option>
-<option>Express freight</option>
-<option>Container transport</option>
-<option>Warehousing</option>
-<option>Distribution</option>
-<option>Business freight</option>
-<option>Custom logistics</option>
-</select>
+<select id="bkFreightType" name="freight_type" required=""><option value="">Select a service</option><option value="wharf-container-movements">20ft and 40ft container movements to and from wharf</option><option value="side-loader-deliveries">Side-loader deliveries</option><option value="skel-trailer-deliveries">Skel trailer deliveries</option><option value="drop-trailer-deliveries">Drop trailer deliveries</option><option value="b-double-capabilities">B-Double capabilities</option><option value="super-a-capabilities">Super A capabilities</option><option value="20ft-tray-truck-sideloader">20ft tray truck / sideloader</option><option value="vgm-weighing-equipment">VGM weighing equipment</option><option value="container-storage">Container storage</option><option value="customs-approved-fcl">Customs-approved FCL containers – Bond Code GL40P</option><option value="fcl-fumigation">FCL container fumigation – Class 4.6</option><option value="sign-on-glass">Sign on Glass capabilities</option><option value="other">Other / Not sure</option></select>
 </div>
 <div class="bk-field">
 <label for="bkPickupDate">Preferred pickup date</label>
